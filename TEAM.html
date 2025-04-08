@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEAM</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #1db2d0;
+  }
+  h2 {
+    text-align: center;
+    color: black;
+  }
+  .team-row {
+    cursor: pointer;
+  }
+  .players-list {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+
+</style>
+</head>
+<body>
+
+<h2>TEAM</h2>
+
+<table>
+  <tr>
+    <th>Team ID</th>
+    <th>Team Name</th>
+    <th>Coach Name</th>
+    <th>Team Logo</th>
+  </tr>
+
+  <!-- Chennai Super Kings -->
+  <tr class="team-row csk" onclick="togglePlayers(1)">
+    <td>1</td>
+    <td>Chennai Super Kings</td>
+    <td>Stephen Fleming</td>
+    <td><img src="csk.jpeg" alt="CSK Logo" width="100"></td>
+  </tr>
+  <tr id="players-1" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+          <li>Ruturaj Gaikwad</li>
+          <li>Devon Conway</li>
+          <li>Rachin Ravindra</li>
+          <li>Rahul Tripathi</li>
+          <li>Shivam Dube</li>
+          <li>Ravindra Jadeja</li>
+          <li>MS Dhoni (WK)</li>
+          <li>R. Ashwin</li>
+          <li>Noor Ahmad</li>
+          <li>Matheesha Pathirana</li>
+          <li>Khaleel Ahmed</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Mumbai Indians -->
+  <tr class="team-row mi" onclick="togglePlayers(2)">
+    <td>2</td>
+    <td>Mumbai Indians</td>
+    <td>Mahela Jayawardene</td>
+    <td><img src="mi.png" alt="MI Logo" width="100"></td>
+  </tr>
+  <tr id="players-2" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+          <li>Rohit Sharma</li>
+          <li>Will Jacks</li>
+          <li>Suryakumar Yadav</li>
+          <li>Tilak Varma</li>
+          <li>Hardik Pandya</li>
+          <li>Naman Dhir</li>
+          <li>Ryan Rickelton (wk)</li>
+          <li>Mitchell Santner</li>
+          <li>Deepak Chahar</li>
+          <li>Jasprit Bumrah</li>
+          <li>Trent Boult</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Kolkata Knight Riders -->
+  <tr class="team-row kkr" onclick="togglePlayers(3)">
+    <td>3</td>
+    <td>Kolkata Knight Riders</td>
+    <td>Chandrakant Pandit</td>
+    <td><img src="kkr.png" alt="KKR Logo" width="100"></td>
+  </tr>
+  <tr id="players-3" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+          <li>Sunil Narine</li>
+          <li>Quinton de Kock (WK)</li>
+          <li>Venkatesh Iyer</li>
+          <li>Ajinkya Rahane</li>
+          <li>Rinku Singh</li>
+          <li>Andre Russell</li>
+          <li>Ramandeep Singh</li>
+          <li>Harshit Rana</li>
+          <li>Vaibhav Arora</li>
+          <li>Anrich Nortje</li>
+          <li>Varun Chakravarthy</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Sunrisers Hyderabad -->
+  <tr class="team-row srh" onclick="togglePlayers(4)">
+    <td>4</td>
+    <td>Sunrisers Hyderabad</td>
+    <td>Daniel Vettori</td>
+    <td><img src="srh.png" alt="SRH Logo" width="100"></td>
+  </tr>
+  <tr id="players-4" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+          <li>Abhishek Sharma</li>
+          <li>Travis Head</li>
+          <li>Ishan Kishan (WK)</li>
+          <li>Heinrich Klaasen</li>
+          <li>Kamindu Mendis</li>
+          <li>Nitish Reddy</li>
+          <li>Abhinav Manohar</li>
+          <li>Pat Cummins</li>
+          <li>Mohammed Shami</li>
+          <li>Harshal Patel</li>
+          <li>Rahul Chahar</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Royal Challengers Bangalore -->
+  <tr class="team-row rcb" onclick="togglePlayers(5)">
+    <td>5</td>
+    <td>Royal Challengers Bangalore</td>
+    <td>Andy Flower</td>
+    <td><img src="rcb.jpeg" alt="RCB Logo" width="100"></td>
+  </tr>
+  <tr id="players-5" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+          <li>Phil Salt (WK)</li>
+          <li>Virat Kohli</li>
+          <li>Liam Livingstone</li>
+          <li>Devdutt Padikkal</li>
+          <li>Tim David</li>
+          <li>Rajat Patidar</li>
+          <li>Krunal Pandya</li>
+          <li>Bhuvneshwar Kumar</li>
+          <li>Yash Dayal</li>
+          <li>Josh Hazlewood</li>
+          <li>Suyash Sharma</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Delhi Capitals -->
+  <tr class="team-row dc" onclick="togglePlayers(6)">
+    <td>6</td>
+    <td>Delhi Capitals</td>
+    <td>Hemang Badani</td>
+    <td><img src="dc.jpeg" alt="DC Logo" width="100"></td>
+  </tr>
+  <tr id="players-6" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+          <li>Fraser-McGurk</li>
+          <li>KL Rahul (WK)</li>
+          <li>Abishek Porel</li>
+          <li>Harry Brook</li>
+          <li>Tristan Stubbs</li>
+          <li>Axar Patel</li>
+          <li>Ashutosh Sharma</li>
+          <li>Mitchell Starc</li>
+          <li>Kuldeep Yadav</li>
+          <li>T. Natarajan</li>
+          <li>Mukesh Kumar</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Punjab Kings -->
+  <tr class="team-row pbks" onclick="togglePlayers(7)">
+    <td>7</td>
+    <td>Punjab Kings</td>
+    <td>Ricky Ponting</td>
+    <td><img src="pbks.jpeg" alt="PBKS Logo" width="100"></td>
+  </tr>
+  <tr id="players-7" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+        <li>Prabhsimran Singh</li>
+        <li>Josh Inglis (WK)</li>
+        <li>Shreyas Iyer</li>
+        <li>Glenn Maxwell</li>
+        <li>Marcus Stoinis</li>
+        <li>Shashank Singh</li>
+        <li>Marco Jansen</li>
+        <li>Harpreet Brar</li>
+        <li>Arshdeep Singh</li>
+        <li>Yuzvendra Chahal</li>
+        <li>Vijaykumar Vyshak</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Rajasthan Royals -->
+  <tr class="team-row rr" onclick="togglePlayers(8)">
+    <td>8</td>
+    <td>Rajasthan Royals</td>
+    <td>Rahul Dravid</td>
+    <td><img src="rr.png" alt="RR Logo" width="100"></td>
+  </tr>
+  <tr id="players-8" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+        <li>Yashasvi Jaiswal</li>
+        <li>Sanju Samson (WK)</li>
+        <li>Nitish Rana</li>
+        <li>Riyan Parag</li>
+        <li>Dhruv Jurel</li>
+        <li>Shimron Hetmyer</li>
+        <li>Jofra Archer</li>
+        <li>Wanindu Hasaranga</li>
+        <li>Maheesh Theekshana</li>
+        <li>Sandeep Sharma</li>
+        <li>Akash Madhwal</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Gujarat Titans -->
+  <tr class="team-row gt" onclick="togglePlayers(9)">
+    <td>9</td>
+    <td>Gujarat Titans</td>
+    <td>Ashish Nehra</td>
+    <td><img src="gt.jpeg" alt="GT Logo" width="100"></td>
+  </tr>
+  <tr id="players-9" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+        <li>Shubman Gill</li>
+        <li>Jos Buttler (WK)</li>
+        <li>Sai Sudharsan</li>
+        <li>Sherfane Rutherford</li>
+        <li>Shahrukh Khan</li>
+        <li>Rahul Tewatia</li>
+        <li>Washington Sundar</li>
+        <li>Rashid Khan</li>
+        <li>Kagiso Rabada</li>
+        <li>Prasidh Krishna</li>
+        <li>Mohammed Siraj</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Lucknow Super Giants -->
+  <tr class="team-row lsg" onclick="togglePlayers(10)">
+    <td>10</td>
+    <td>Lucknow Super Giants</td>
+    <td>Justin Langer</td>
+    <td><img src="lsg.jpeg" alt="LSG Logo" width="100"></td>
+  </tr>
+  <tr id="players-10" class="players-list">
+    <td colspan="4">
+      <h4>Players:</h4>
+      <ul>
+        <li>Arshin Kulkarni</li>
+        <li>Mitchell Marsh</li>
+        <li>Nicholas Pooran</li>
+        <li>Rishabh Pant (WK)</li>
+        <li>David Miller</li>
+        <li>Aiden Markram</li>
+        <li>Shahbaz Ahmed</li>
+        <li>Ravi Bishnoi</li>
+        <li>Mohsin Khan</li>
+        <li>Mayank Yadav</li>
+        <li>Avesh Khan</li>
+      </ul>
+    </td>
+  </tr>
+
+</table>
+
+<script>
+  function togglePlayers(teamId) {
+    var playerRow = document.getElementById('players-' + teamId);
+    if (playerRow.style.display === 'none' || playerRow.style.display === '') {
+      playerRow.style.display = 'table-row';
+    } else {
+      playerRow.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
